@@ -10,7 +10,10 @@ public class Main {
         hamburger.addHamburgerAddition1("lettuce", .27);
         hamburger.addHamburgerAddition2("Beans", 9.00);
         price = hamburger.itemizeHamburger();
-        System.out.println(price);
+        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+        price = healthyBurger.itemizeHamburger();
+        healthyBurger.addHealthAddition1("Healthy Beans", 12.00);
+        healthyBurger.itemizeHamburger();
 
     }
 }
